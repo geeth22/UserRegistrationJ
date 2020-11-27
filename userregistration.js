@@ -1,1 +1,3 @@
-//Welcome to user registration
+const Utility = require('./Utility');
+
+Utility.CheckPattern();
