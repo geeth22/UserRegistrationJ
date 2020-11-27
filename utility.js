@@ -2,8 +2,8 @@ var readlineSync = require('readline-sync');
 class UserRegistration {
     CheckPattern = () => {
         try{
-            let input = /^([a-zA-Z0-9_.$*&!+-]+)@([a-z0-9]+).([a-z.]{2,7})$/
-        var UserName = readlineSync.question('Enter Last Name ');
+            let input = /^[1-9]{2}\s{0,1}[0-9]{10}$/
+        var UserName = readlineSync.question('Enter Phone Number ');
         const pattern = input.exec(UserName);
         if (pattern) {
             console.log("Valid");
